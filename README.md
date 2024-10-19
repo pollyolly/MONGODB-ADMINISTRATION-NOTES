@@ -11,23 +11,20 @@
 ```vim
 $ mongosh;
 $ use admin;
-$ admin> db.createUser(
-    {user:"AdminUsername",
-    pwd:"AdminPassword",
-    roles:[{ 
-        role:"root",db:"admin" }]
-        });
+$ admin> db.createUser({
+        user:"AdminUsername",
+        pwd:"AdminPassword",
+        roles:[{ role:"root",db:"admin" }]
+    });
 ```
-### Create User in a Database
+### Create Database and Create a User
 ```vim
-$ use test;
-$ db.createUser(
-  {
+$ use test; #Create user and Select database
+$ db.createUser({
     user: "tester",
     pwd: "tester123",
     roles: [ { role: "readWrite", db: "test" } ]
-  }
-)
+  });
 ```
 ### Login Account
 ```vim
