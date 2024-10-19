@@ -22,7 +22,7 @@ $ admin> db.createUser(
 ```vim
 $mongosh --username admin --authenticationDatabase admin
 ```
-### Create User in Database
+### Create User in a Database
 ```vim
 $ use test;
 $ db.createUser(
