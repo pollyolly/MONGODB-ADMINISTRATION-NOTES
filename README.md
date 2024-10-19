@@ -18,10 +18,6 @@ $ admin> db.createUser(
         role:"root",db:"admin" }]
         });
 ```
-### Login Account
-```vim
-$mongosh --username admin --authenticationDatabase admin
-```
 ### Create User in a Database
 ```vim
 $ use test;
@@ -32,6 +28,10 @@ $ db.createUser(
     roles: [ { role: "readWrite", db: "test" } ]
   }
 )
+```
+### Login Account
+```vim
+$mongosh --username admin --authenticationDatabase admin
 ```
 ### Remote Connection String
 ```vim
