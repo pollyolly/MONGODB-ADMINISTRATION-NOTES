@@ -41,6 +41,9 @@ $mongosh --username admin --authenticationDatabase admin
 mongodb://tester:tester123@162.220.160.183:27017/?authSource=test
 ```
 ### MongoDb Consuming Large Memory
+```vim
+$vi /etc/mongod.conf
+```
 Add the wiredTiger configuration
 ```vim
 storage:
