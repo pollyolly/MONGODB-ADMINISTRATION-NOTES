@@ -18,7 +18,7 @@ $ admin> db.createUser(
         role:"root",db:"admin" }]
         });
 ```
-### Test Admin Account
+### Login Account
 ```vim
 $mongosh --username admin --authenticationDatabase admin
 ```
