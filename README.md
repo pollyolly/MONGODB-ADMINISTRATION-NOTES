@@ -7,10 +7,11 @@
 ### Backup
 [MongoDB Backup](https://medium.com/@johnmark_76235/mongodb-backup-70ae4961f274)
 
-### Show Databases and Collections (tables)
+### Show Databases, Collections (tables) and Table Columns
 ```vim
-test> show databases; or show dbs;
-test> show collections; or show tables;
+test> show databases; #or show dbs;
+test> show collections; #or show tables;
+test> db.test.findOne(); #show Collection columns
 ```
 ### Create User Admin in Admin Database
 ```vim
