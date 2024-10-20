@@ -49,5 +49,5 @@ Add the wiredTiger configuration
 storage:
   wiredTiger:
    engineConfig:
-       cacheSizeGB: 0.256 #256 memory
+       cacheSizeGB: 0.256 #256Mb reduce cache memory
 ```
