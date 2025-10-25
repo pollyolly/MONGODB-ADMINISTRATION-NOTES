@@ -9,24 +9,30 @@
 
 ### Show Databases, Collections (tables) and Table Columns
 ```vim
-test> show databases; #or show dbs;
-test> show collections; #or show tables;
-test> db.test.findOne(); #show Collection columns
+$test> show databases; #or show dbs;
+$test> show collections; #or show tables;
+$test> db.test.findOne(); #show Collection columns
 ```
-### Create User Admin in Admin Database
+### Admin Account Database
+Create User Admin
 ```vim
-$ mongosh;
-$ use admin;
-$ admin> db.createUser({
+$mongosh;
+$use admin;
+$admin> db.createUser({
         user:"AdminUsername",
         pwd:"AdminPassword",
         roles:[{ role:"root",db:"admin" }]
     });
 ```
+Change Admin Password
+```vim
+$use admin
+$admin> db.changeUserPassword("root", "newpassword")
+```
 ### Create Database and Create a User
 ```vim
-$ use test; #Create user and Select database
-$ db.createUser({
+$use test; #Create user and Select database
+$db.createUser({
     user: "tester",
     pwd: "tester123",
     roles: [ { role: "readWrite", db: "test" } ]
