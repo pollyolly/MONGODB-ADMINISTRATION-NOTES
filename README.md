@@ -7,6 +7,9 @@
 ### Backup
 [MongoDB Backup](https://medium.com/@johnmark_76235/mongodb-backup-70ae4961f274)
 
+### User Management
+[User Management](https://www.mongodb.com/docs/manual/reference/method/js-user-management/)
+
 ### Show Databases, Collections (tables) and Table Columns
 ```vim
 $test> show databases; #or show dbs;
