@@ -42,6 +42,10 @@ $db.createUser({
 ```vim
 $mongosh --username admin --authenticationDatabase admin
 ```
+or
+```
+$./mongosh --username admin --authenticationDatabase admin
+```
 ### Remote Connection String
 ```vim
 mongodb://tester:tester123@162.220.160.183:27017/?authSource=test
