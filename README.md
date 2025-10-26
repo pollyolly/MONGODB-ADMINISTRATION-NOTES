@@ -29,6 +29,10 @@ Change Admin Password
 $use admin
 $admin> db.changeUserPassword("root", "newpassword")
 ```
+Show Users
+```vim
+$admin> db.getUsers();
+```
 ### Create Database and Create a User
 ```vim
 $use test; #Create user and Select database
